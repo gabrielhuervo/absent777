@@ -52,11 +52,11 @@ a:hover{color:#fff;}
 h1,h2,h3,h4{font-family:var(--font);margin:0;}
 button{font-family:var(--font);}
 
-/* ─── particle canvas ─── */
+/* --- particle canvas --- */
 #particles-js{position:fixed;inset:0;z-index:0;pointer-events:none;}
 body.perf #particles-js{display:none;}
 
-/* ─── header (froggie fixed bar) ─── */
+/* --- header (froggie fixed bar) --- */
 #site-header{
     position:fixed;top:0;left:50%;transform:translateX(-50%);
     width:90%;max-width:1500px;z-index:9998;
@@ -97,7 +97,7 @@ body.perf #particles-js{display:none;}
 .icon-btn.danger{color:#ff7b7b;}
 .icon-btn.danger:hover{background:#ff5c5c;color:#000;box-shadow:0 0 10px #ff5c5c;}
 
-/* ─── main / views ─── */
+/* --- main / views --- */
 #site-main{position:relative;z-index:2;max-width:1500px;margin:0 auto;padding:92px 24px 40px;min-height:calc(100vh - 120px);}
 .view{display:none;}
 .view.on{display:block;animation:fadeUp .3s ease;}
@@ -106,7 +106,7 @@ body.perf #particles-js{display:none;}
 .view-head h2{font-size:1.7rem;font-weight:700;text-shadow:0 0 14px var(--glow);}
 .view-head .sub{color:var(--dim);font-size:.9rem;}
 
-/* ─── hero box (froggie roddyrichheshomebox) ─── */
+/* --- hero box (froggie roddyrichheshomebox) --- */
 #hero{
     position:relative;margin:4vh auto 0;width:min(680px,94%);
     padding:34px 38px 30px;background:var(--panel);
@@ -151,7 +151,7 @@ select.engine-select{
 .hero-stats{display:flex;gap:18px;justify-content:center;margin-top:18px;color:var(--dim);font-size:.78rem;letter-spacing:1px;flex-wrap:wrap;}
 .hero-stats b{color:var(--mint);font-weight:600;}
 
-/* ─── quick shelves on home ─── */
+/* --- quick shelves on home --- */
 .shelf{margin-top:30px;}
 .shelf-head{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
 .shelf-title{font-size:1.15rem;font-weight:700;text-shadow:0 0 10px var(--glow);}
@@ -165,7 +165,7 @@ select.engine-select{
 .shelf-row{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 12px;scroll-behavior:smooth;}
 .shelf-row::-webkit-scrollbar{height:6px;}
 
-/* ─── game cards (froggie .gallery: hover shrink + glow + label pill) ─── */
+/* --- game cards (froggie .gallery: hover shrink + glow + label pill) --- */
 .game-card{
     position:relative;flex:0 0 auto;width:224px;height:128px;border-radius:var(--radius-xl);
     overflow:hidden;cursor:pointer;background:var(--panel-soft);
@@ -195,7 +195,7 @@ select.engine-select{
 .grid{display:flex;flex-wrap:wrap;gap:16px;}
 .grid .game-card{width:300px;height:169px;}
 
-/* ─── chips ─── */
+/* --- chips --- */
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;}
 .chip{
     background:var(--btn);border:2px solid var(--edge);border-radius:100px;color:#fff;
@@ -206,7 +206,7 @@ select.engine-select{
 .search-row{display:flex;gap:10px;margin-bottom:20px;}
 .search-row .big-input{width:100%;}
 
-/* ─── panels / tool rows ─── */
+/* --- panels / tool rows --- */
 .panel{
     background:var(--panel);border:2px solid var(--edge);border-radius:var(--radius-m);
     padding:18px 20px;box-shadow:0 4px 18px rgba(0,0,0,.35);
@@ -232,7 +232,7 @@ select.engine-select{
 }
 .tool-item:hover .copy-tag{color:var(--mint);border-color:var(--accent);}
 
-/* ─── lock gate ─── */
+/* --- lock gate --- */
 #tool-gate{max-width:420px;margin:8vh auto 0;text-align:center;}
 #tool-gate .lockring{
     width:74px;height:74px;margin:0 auto 18px;border-radius:50%;
@@ -249,7 +249,7 @@ select.engine-select{
 @keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-10px)}40%{transform:translateX(10px)}60%{transform:translateX(-8px)}80%{transform:translateX(8px)}}
 .gate-error{color:#ff7b7b;font-size:.8rem;margin-top:10px;min-height:1.2em;}
 
-/* ─── apps grid ─── */
+/* --- apps grid --- */
 .apps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px;}
 .app-card{
     background:var(--panel);border:2px solid var(--edge);border-radius:var(--radius-m);
@@ -267,7 +267,7 @@ select.engine-select{
     color:var(--dim);font-size:.9rem;background:var(--ink);
 }
 
-/* ─── media ─── */
+/* --- media --- */
 .media-tabs{display:flex;gap:8px;margin-bottom:18px;}
 .mcard-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;}
 .mcard{
@@ -288,7 +288,7 @@ select.engine-select{
 }
 .track-btn:hover,.track-btn.playing{border-color:var(--mint);color:var(--mint);box-shadow:0 0 10px var(--glow);}
 
-/* ─── history / bookmarks / mirrors rows ─── */
+/* --- history / bookmarks / mirrors rows --- */
 .row-list{display:flex;flex-direction:column;gap:8px;}
 .empty-note{color:var(--dim);font-size:.85rem;padding:18px 4px;}
 .mirror-item{
@@ -303,7 +303,7 @@ select.engine-select{
 }
 .ghost-btn:hover{color:var(--mint);border-color:var(--accent);}
 
-/* ─── browser mode ─── */
+/* --- browser mode --- */
 #browser-ui{position:fixed;inset:0;z-index:10000;background:var(--bg);display:none;flex-direction:column;}
 #browser-ui.on{display:flex;}
 #tabstrip{
@@ -380,7 +380,7 @@ select.engine-select{
 .message-content h1{font-size:1.1rem;margin-bottom:8px;}
 .message-content p{color:var(--dim);font-size:.82rem;word-break:break-all;margin:0 0 16px;}
 
-/* ─── game viewer overlay ─── */
+/* --- game viewer overlay --- */
 #game-viewer{position:fixed;inset:0;z-index:11000;background:rgba(0,0,0,.88);display:none;flex-direction:column;}
 #game-viewer.on{display:flex;}
 #gv-bar{
@@ -392,7 +392,7 @@ select.engine-select{
 body.gv-full #gv-bar{display:none;}
 body.gv-full #game-viewer{background:#000;}
 
-/* ─── modals ─── */
+/* --- modals --- */
 .modal{position:fixed;inset:0;z-index:12000;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px);}
 .modal.on{display:flex;}
 .modal-panel{
@@ -458,7 +458,7 @@ body.gv-full #game-viewer{background:#000;}
 .about-box b{color:#fff;}
 .about-box .big{font-size:1.6rem;font-weight:700;color:#fff;text-shadow:0 0 12px var(--glow);}
 
-/* ─── toast ─── */
+/* --- toast --- */
 #absent-toast{
     position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(20px);z-index:13000;
     background:#000;border:2px solid var(--mint);color:#fff;border-radius:100px;
@@ -467,7 +467,7 @@ body.gv-full #game-viewer{background:#000;}
 }
 #absent-toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
 
-/* ─── footer ─── */
+/* --- footer --- */
 #site-footer{
     position:relative;z-index:2;text-align:center;color:var(--dim);font-size:.78rem;
     padding:20px 10px 26px;letter-spacing:.5px;
@@ -476,7 +476,7 @@ body.gv-full #game-viewer{background:#000;}
 #site-footer .phrase.swap{opacity:0;}
 #site-footer .sep{margin:0 10px;opacity:.4;}
 
-/* ─── stealth cover (fake classroom) ─── */
+/* --- stealth cover (fake classroom) --- */
 #stealth-cover{position:fixed;inset:0;z-index:20000;background:#f6f8fc;display:none;flex-direction:column;font-family:Arial,Helvetica,sans-serif;}
 #stealth-cover.on{display:flex;}
 .sc-top{background:#1a73e8;color:#fff;padding:14px 26px;display:flex;align-items:center;gap:16px;font-size:1.05rem;}
@@ -494,7 +494,7 @@ body.gv-full #game-viewer{background:#000;}
 .sc-tile .sc-tname{padding:12px 16px;font-size:.95rem;color:#202124;}
 .sc-tile .sc-tsec{padding:0 16px 12px;font-size:.75rem;color:#5f6368;}
 
-/* ─── block screen (fake school filter) ─── */
+/* --- block screen (fake school filter) --- */
 #block-screen{position:fixed;inset:0;z-index:21000;background:#fff;display:none;flex-direction:column;align-items:center;justify-content:center;font-family:Arial,Helvetica,sans-serif;color:#333;text-align:center;padding:20px;}
 #block-screen.on{display:flex;}
 #block-screen .bs-band{background:#eceff4;width:100%;padding:14px 0;text-align:center;font-weight:bold;color:#5f6368;letter-spacing:1px;border-bottom:1px solid #d5dbe3;}
@@ -502,10 +502,10 @@ body.gv-full #game-viewer{background:#000;}
 #block-screen p{color:#5f6368;font-size:.92rem;margin:4px 0;max-width:520px;}
 #block-screen .bs-lock{width:58px;height:58px;border-radius:50%;background:#eceff4;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-top:34px;}
 
-/* ─── crosshair ─── */
+/* --- crosshair --- */
 #absent-crosshair{position:fixed;z-index:15000;pointer-events:none;transform:translate(-50%,-50%);display:none;}
 
-/* ─── init screen ─── */
+/* --- init screen --- */
 #boot{
     position:fixed;inset:0;z-index:19000;background:var(--bg);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;
     transition:opacity .4s;
@@ -516,7 +516,7 @@ body.gv-full #game-viewer{background:#000;}
 #boot .spinner{margin:0;}
 #boot .boot-sub{color:var(--dim);font-size:.78rem;letter-spacing:2px;text-transform:uppercase;}
 
-/* ─── responsive ─── */
+/* --- responsive --- */
 @media (max-width:860px){
     #site-header{width:96%;padding:8px 12px;gap:8px;}
     #site-header .wordmark{font-size:1.2rem;}
@@ -561,7 +561,7 @@ body.gv-full #game-viewer{background:#000;}
 
   <main id="site-main">
 
-    <!-- ── HOME ── -->
+    <!-- -- HOME -- -->
     <section class="view on" id="view-home">
       <div id="hero">
         <h1>absent<span class="dot">.</span></h1>
@@ -590,7 +590,7 @@ body.gv-full #game-viewer{background:#000;}
       <div id="home-shelves"></div>
     </section>
 
-    <!-- ── GAMES ── -->
+    <!-- -- GAMES -- -->
     <section class="view" id="view-games">
       <div class="view-head"><h2>Games</h2><span class="sub" id="games-sub">loading…</span></div>
       <div class="search-row"><input class="big-input" id="game-search" placeholder="search games…" autocomplete="off"></div>
@@ -599,7 +599,7 @@ body.gv-full #game-viewer{background:#000;}
       <p class="empty-note" id="games-empty" style="display:none">no games match that search</p>
     </section>
 
-    <!-- ── APPS ── -->
+    <!-- -- APPS -- -->
     <section class="view" id="view-apps">
       <div class="view-head"><h2>Apps</h2><span class="sub">full apps, right in the tab</span></div>
       <div class="apps-grid" id="apps-grid"></div>
@@ -620,7 +620,7 @@ body.gv-full #game-viewer{background:#000;}
       </div>
     </section>
 
-    <!-- ── MEDIA ── -->
+    <!-- -- MEDIA -- -->
     <section class="view" id="view-media">
       <div class="view-head"><h2>Media</h2><span class="sub">shows · manga · music</span></div>
       <div class="media-tabs">
@@ -644,7 +644,7 @@ body.gv-full #game-viewer{background:#000;}
       </div>
     </section>
 
-    <!-- ── TOOLS (password gated) ── -->
+    <!-- -- TOOLS (password gated) -- -->
     <section class="view" id="view-tools">
       <div class="view-head"><h2>Toolbox</h2><span class="sub">locked — reads like school stuff</span></div>
       <div id="tool-gate">
@@ -658,19 +658,19 @@ body.gv-full #game-viewer{background:#000;}
       <div id="tool-content" style="display:none"></div>
     </section>
 
-    <!-- ── HISTORY ── -->
+    <!-- -- HISTORY -- -->
     <section class="view" id="view-history">
       <div class="view-head"><h2>History</h2><button class="ghost-btn" id="history-clear" style="margin-left:auto">clear all</button></div>
       <div class="row-list" id="history-list"></div>
     </section>
 
-    <!-- ── BOOKMARKS ── -->
+    <!-- -- BOOKMARKS -- -->
     <section class="view" id="view-bookmarks">
       <div class="view-head"><h2>Bookmarks</h2><span class="sub">double-tap ★ in the browser to save pages</span></div>
       <div class="row-list" id="bookmark-list"></div>
     </section>
 
-    <!-- ── MIRRORS ── -->
+    <!-- -- MIRRORS -- -->
     <section class="view" id="view-mirrors">
       <div class="view-head"><h2>Mirrors</h2><span class="sub">backup links — if one is blocked, open another</span></div>
       <div class="row-list" id="mirror-list"></div>
@@ -964,12 +964,12 @@ function toast(msg) {
     clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove('show'), 1900);
 }
 
-/* ── mirror links (base64 so scrapers/cops have to work for it) ── */
+/* -- mirror links (base64 so scrapers/cops have to work for it) -- */
 let MIRROR_LINKS = [];
 try { MIRROR_LINKS = JSON.parse(atob('WyJodHRwczovL21hdGgub2NjdWx0Y29udGFpbm1lbnRjb2FsaXRpb24ud29ya2Vycy5kZXYvIiwgImh0dHBzOi8vYWJzZW50Lm9jY3VsdGNvbnRhaW5tZW50Y29hbGl0aW9uLndvcmtlcnMuZGV2LyIsICJodHRwczovL3NjaG9vbC5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldi8iLCAiaHR0cHM6Ly9sYXJwbGFycHNhaHVyLm9jY3VsdGNvbnRhaW5tZW50Y29hbGl0aW9uLndvcmtlcnMuZGV2LyIsICJodHRwczovL2Fic2VudC1yNXd3OS5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC14MjRxay5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1veGk4YS5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1teGQzeS5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1zam00ai5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1qcTN3Zi5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC14bDk0Zy5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC01ZDM4Zy5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC0yNXBiNy5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC14dDl6OC5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC13bTY3OS5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC12cmI4Ni5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1meG9rYi5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1rMXFvcS5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1zZGc0ei5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC04dG8zYy5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1oeTZvOS5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1qNWl0Yi5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1henF0by5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC03ZG4wYi5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC0yaTBtdS5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC0za2twbC5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1tdjEzdS5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC1qYXJ1Zy5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldiIsICJodHRwczovL2Fic2VudC11eWN4aS5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldi8iLCAiaHR0cHM6Ly9hYnNlbnQtbnB3NGcub2NjdWx0Y29udGFpbm1lbnRjb2FsaXRpb24ud29ya2Vycy5kZXYvIiwgImh0dHBzOi8vYWJzZW50LXQ4a3gzLm9jY3VsdGNvbnRhaW5tZW50Y29hbGl0aW9uLndvcmtlcnMuZGV2LyIsICJodHRwczovL2Fic2VudC1nbXRsbS5vY2N1bHRjb250YWlubWVudGNvYWxpdGlvbi53b3JrZXJzLmRldi8iLCAiaHR0cHM6Ly9hYnNlbnQtZmxlcjcub2NjdWx0Y29udGFpbm1lbnRjb2FsaXRpb24ud29ya2Vycy5kZXYiXQ==
 ')); } catch (e) {}
 
-/* ── wisp servers ── */
+/* -- wisp servers -- */
 let WISP_SERVERS = [];
 let DEFAULT_WISP = window.SITE_CONFIG?.defaultWisp ?? null;
 
@@ -1022,7 +1022,7 @@ async function initializeWithBestServer() {
     }
 }
 
-/* ── scramjet + transport ── */
+/* -- scramjet + transport -- */
 const getBareMux = () => window.BareMux ?? null;
 let sharedScramjet = null, sharedConnection = null, sharedConnectionReady = false;
 
@@ -1241,7 +1241,7 @@ function updateLoadingBar(percent) {
     if (percent === 100) setTimeout(() => { bar.style.width = "0%"; }, 250);
 }
 
-/* ── browser / site mode switching ── */
+/* -- browser / site mode switching -- */
 let browserOpen = false;
 function showBrowser(url) {
     browserOpen = true;
@@ -1267,7 +1267,7 @@ function showSite() {
    ABSENT v6 features — games · media · tools · stealth
    ═══════════════════════════════════════════════════════════════ */
 
-/* ── history + bookmarks engines ── */
+/* -- history + bookmarks engines -- */
 function recordHistory(url) {
     if (!url || url.startsWith('blob:') || url.startsWith('data:')) return;
     const list = store('absent_history', []);
@@ -1339,7 +1339,7 @@ $('bookmark-btn').onclick = () => {
     }
 };
 
-/* ── cloaking (15 cartel presets + custom) ── */
+/* -- cloaking (15 cartel presets + custom) -- */
 const svgUri = (s) => 'data:image/svg+xml;utf8,' + encodeURIComponent(s);
 const CLOAKS = {
     google:    { t: 'Google', icon: svgUri('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>') },
@@ -1442,7 +1442,7 @@ $('gv-ab').onclick = () => { launchAboutBlank(); };
     }
 })();
 
-/* ── stealth cover (ctrl+shift+d / visibilitychange) + block screen ── */
+/* -- stealth cover (ctrl+shift+d / visibilitychange) + block screen -- */
 function setCover(on) {
     $('stealth-cover').classList.toggle('on', on);
     if (on) document.title = document.title.startsWith('Home') ? document.title : 'Home';
@@ -1468,7 +1468,7 @@ function showBlockScreen() {
 $('bs-enter').onclick = () => $('block-screen').classList.remove('on');
 if (localStorage.getItem('absent_blockscr') === 'true' && !sessionStorage.getItem('absent_bs_done')) showBlockScreen();
 
-/* ── panic ── */
+/* -- panic -- */
 let panicListener = null;
 function getPanicConfig() {
     try {
@@ -1503,7 +1503,7 @@ function panicNow() {
 $('hd-panic').onclick = panicNow;
 $('panic-quick-btn').onclick = panicNow;
 
-/* ── games engine (favorites + search + categories + random) ── */
+/* -- games engine (favorites + search + categories + random) -- */
 let GAMES = [];
 const PREF = ['featured', 'popular', 'multiplayer', 'emulator', 'horror', 'media', 'tv', 'manga'];
 const LABELS = { featured: 'Featured', popular: 'Popular', multiplayer: 'Multiplayer', emulator: 'Emulators', horror: 'Horror', media: 'Media', tv: 'TV Shows', manga: 'Manga', games: 'Games' };
@@ -1579,7 +1579,7 @@ function renderGames() {
 }
 $('game-search').addEventListener('input', (e) => { gameQuery = e.target.value.trim().toLowerCase(); renderGames(); });
 
-/* ── game viewer ── */
+/* -- game viewer -- */
 let viewerGame = null;
 function openGame(g) {
     if (!g) return;
@@ -1621,7 +1621,7 @@ window.addEventListener('message', (e) => {
     if (e.data && e.data.type === 'absent_open_tab' && e.data.url) showBrowser(e.data.url);
 });
 
-/* ── media (tv / manga / music) ── */
+/* -- media (tv / manga / music) -- */
 const TV_SHOWS = [{"n": "Adventure Time", "u": "https://drive.google.com/drive/u/0/folders/1OwoKydzUQUUp6n-Nh7CCAQXGLfchU8Ta", "t": "assets/img/shows/adventure.png"}, {"n": "Boondocks", "u": "https://drive.google.com/drive/folders/1ujarzaX_90FGOiRC15OmXOAgwSbdI_kA", "t": "assets/img/shows/boondocks.png"}, {"n": "The Cuphead Show", "u": "https://drive.google.com/drive/u/0/folders/1j_K1YV4w_sHAzwEAaUMl-qSk4qjrYSJ_", "t": "assets/img/shows/cuphead.png"}, {"n": "The Cleveland Show", "u": "https://drive.google.com/drive/folders/1Yini_uXuxwQzlYqOX447QK2GQis52bxa", "t": "assets/img/shows/cleveland.png"}, {"n": "Invincible", "u": "https://drive.google.com/drive/folders/1e9CWTpbDCwyLLbKZNr4lgDAvJmf7TwOo", "t": "assets/img/shows/invincible.png"}, {"n": "Gravity Falls", "u": "https://drive.google.com/drive/u/0/folders/1fU-FrVZ12bAZYxtxrofKkEQg2kMrIjm3", "t": "assets/img/shows/gravity.png"}, {"n": "Rick and Morty", "u": "https://drive.google.com/drive/folders/1ySajy4O8tRbVd_vlGCk9uyMxYHFUH-Hy", "t": "assets/img/shows/rickandmorty.png"}, {"n": "Death Note", "u": "https://drive.google.com/drive/folders/166tNe4UUWgYROWK4DwhtZKxgrpFZZAm5", "t": "assets/img/shows/note.png"}, {"n": "SpongeBob SquarePants", "u": "https://drive.google.com/drive/u/0/folders/1QpqcZWVMlzIru0g8xf5olhMeY75YKJkk", "t": "assets/img/shows/spongebob.png"}, {"n": "Squid Game", "u": "https://drive.google.com/drive/folders/1Zs2H3Nxl-yQHm21RJNbh2bIAesJ5ouY9", "t": "assets/img/shows/squid.png"}, {"n": "The Powerpuff Girls", "u": "https://drive.google.com/drive/u/0/folders/1IYfB0oASMroneHQn8KansvGRnNIcYnFd", "t": "assets/img/shows/power.png"}, {"n": "Gumball (Season 1)", "u": "https://drive.google.com/drive/folders/1OXgcS7q8GexG3oOHxSMDuNYfUo-BMVxq", "t": "assets/img/shows/gumball.jpg"}, {"n": "Gumball (Season 2)", "u": "https://drive.google.com/drive/folders/1VJlXHKRS2qokKTcZLwlF9_zeSNcAi0rU", "t": "assets/img/shows/gumball2.jpg"}, {"n": "Gumball (Season 3)", "u": "https://drive.google.com/drive/folders/1jhdpF65hUXwCRjOZKqquWB4z8L1ZpII7", "t": "assets/img/shows/gumball3.jpg"}, {"n": "Gumball (Season 4)", "u": "https://drive.google.com/drive/folders/1DO4mX1SM8_xwqpSGkyJ7k_iHrrPbhL9J", "t": "assets/img/shows/gumball4.jpg"}, {"n": "Gumball (Season 5)", "u": "https://drive.google.com/drive/folders/1W6TZs3tyU4wPqhFystx3cz0M7w6pzLbP", "t": "assets/img/shows/gumball5.jpg"}, {"n": "Gumball (Season 6)", "u": "https://drive.google.com/drive/folders/1pZE3vZHVmt7REai0Q1Dz3hJM9feupEVa", "t": "assets/img/shows/gumball6.jpg"}, {"n": "Jujutsu Kaisen (Season 1)", "u": "https://drive.google.com/drive/folders/1uxszC0gNTvkWicUU-TAUfCdGy7I8g0_y", "t": "assets/img/shows/jjk.png"}, {"n": "Jujutsu Kaisen (Season 2)", "u": "https://drive.google.com/drive/folders/1a59lEnayevGMXtPyVn52II3rdorI6aBG", "t": "assets/img/shows/jjk2.jpg"}, {"n": "Dragon Ball Super", "u": "https://drive.google.com/file/d/1-gxJrcv5Ob2lnX1bu-nI2rniRg0p_Mmt/view", "t": "assets/img/shows/dbzsuper.png"}, {"n": "Solo Leveling", "u": "https://drive.google.com/drive/folders/1AFenSrIJO_Voh_z4rE25jA1qFMiMS2a5", "t": "assets/img/shows/solo.png"}, {"n": "MHA (Season 1)", "u": "https://drive.google.com/drive/folders/1v8BMG58ZRYNIWSgIxxHezBSCc11XIBIv?usp=share_link", "t": "assets/img/shows/mha.png"}, {"n": "MHA (Season 2)", "u": "https://drive.google.com/drive/folders/1hsHIuM_1TjMEMQQDobvz4xw_qi45SVCY", "t": "assets/img/shows/mha2.jpg"}, {"n": "MHA (Season 3)", "u": "https://drive.google.com/drive/folders/1cnArp_7jQz70PwBTiRLJO5_xrYVGgTGl?usp=share_link", "t": "assets/img/shows/mha3.jpg"}, {"n": "MHA (Season 4)", "u": "https://drive.google.com/drive/folders/1_JqpVKIvQG14ANk8wBLfq_Rg69mPnZwf?usp=share_link", "t": "assets/img/shows/mha4.jpg"}, {"n": "MHA (Season 5)", "u": "https://drive.google.com/drive/folders/1fml71A9f4FzAQwq9FDYyv25vAFoHhsWE?usp=share_link", "t": "assets/img/shows/mha5.jpg"}, {"n": "MHA (Season 6)", "u": "https://drive.google.com/drive/folders/11BmJJ1cswuNAYeoDcYl9dFW1QngvClVT?usp=share_link", "t": "assets/img/shows/mha6.jpg"}, {"n": "MHA (Season 6 Continued)", "u": "https://drive.google.com/drive/folders/1GxLXe6eFM6DGTNFpwf-rZhiDL_tCkf8E", "t": "assets/img/shows/mha7.jpg"}, {"n": "MHA (Season 7)", "u": "https://drive.google.com/drive/folders/1-mMJE-niE3RaDu_VUt2upo-tAWdLTvb1?usp=drive_link", "t": "assets/img/shows/mha8.jpg"}, {"n": "Cobra Kai", "u": "https://drive.google.com/drive/folders/1idzqcZUju0ADDEWnm1D9AC344rIFiGRN", "t": "assets/img/shows/cobra.png"}, {"n": "Everybody Hate Chris", "u": "https://drive.google.com/drive/folders/1RUZj9WQzdEBYYLeKhD_Y9GRcZbNZMSEy", "t": "assets/img/shows/chris.png"}, {"n": "Ted", "u": "https://drive.google.com/drive/folders/1-6hBb-KZsUoc7ErXnaw2udeQv9u1THRJ", "t": "assets/img/shows/ted.png"}, {"n": "Dexter", "u": "https://drive.google.com/drive/folders/1E4EvbTu2EBJiVp0s-PPIumrJfzZR-9N4", "t": "assets/img/shows/dex.png"}, {"n": "South Park", "u": "https://drive.google.com/drive/folders/1EvDzzcMmYt8Wol75Ip5PtEfu78USEHH-", "t": "assets/img/shows/park.png"}, {"n": "Dexter Resurrection", "u": "https://drive.google.com/drive/folders/1GXdePJtLSaixLV4XkbsyF6nVxhskTIow", "t": "assets/img/shows/dex2.png"}, {"n": "Breaking Bad", "u": "https://drive.google.com/drive/folders/1ZGPUs3433E9KdIAjRnOH3gfEXaq1rmcw", "t": "assets/img/shows/bad.jpg"}, {"n": "Dragon Ball (Episodes 1-15)", "u": "https://drive.google.com/drive/folders/1KYg4AKv3in9mibQwMaH3btDCySKFH21g?usp=share_link", "t": "assets/img/shows/dbz.png"}, {"n": "Dragon Ball (Episodes 15-112)", "u": "https://drive.google.com/drive/folders/18J68L-9TtPvI2mT_bPmdvR0WtsMyRuVb?usp=share_link", "t": "assets/img/shows/dbz2.png"}, {"n": "Dragon Ball (Episodes 113-153)", "u": "https://drive.google.com/drive/folders/1cMoDq7rvEImI3AoFVLJiOWVn8lVhmUDe?usp=share_link", "t": "assets/img/shows/dbz3.jpg"}, {"n": "Hello Kitty", "u": "https://drive.google.com/drive/folders/1rP-9hf3sCdcxIRK36VWZuX7HJAG4g6Pz?usp=sharing", "t": "assets/img/shows/hello.png"}, {"n": "TD Drama", "u": "https://drive.google.com/drive/folders/1y6JO2IeWSvQlpuQjQKJQNHZLN6NgAqIR", "t": "assets/img/shows/td.png"}, {"n": "Dragon Ball GT (Season 1)", "u": "https://drive.google.com/drive/folders/1mi3LQFKyR5vf1ow7_CtB1dejebU4RU2N?usp=share_link", "t": "assets/img/shows/gt.jpg"}, {"n": "Dragon Ball GT (Season 2)", "u": "https://drive.google.com/drive/folders/1u-ZvJKlgtjPUu_WClZnDA-Nbmu5hDLyL", "t": "assets/img/shows/gt2.png"}, {"n": "Dragon Ball GT (Season 3)", "u": "https://drive.google.com/drive/folders/1WlMgS79Vtaabkh0qRneAuBPip387t5MT", "t": "assets/img/shows/gt3.jpg"}, {"n": "American Dad", "u": "https://drive.google.com/drive/folders/1cKosVBoj92b1F5CmvycrHvu4Fgfj6RUB?usp=sharing", "t": "assets/img/shows/american.jpg"}, {"n": "Steven Universe", "u": "https://drive.google.com/drive/folders/1DdwOFAilBai2kDZVmRDCoNkqxTu6_E_5", "t": "assets/img/shows/steven.png"}, {"n": "The Simpsons", "u": "https://drive.google.com/drive/folders/1ZtFBjPAE-qVzdHJ3EKnvlBFNhux5m3Hi", "t": "assets/img/shows/simpsons.png"}, {"n": "Legends of Chaimberlain Heights", "u": "https://drive.google.com/drive/folders/171edneN1aUZioCLPzxoXlORjcgaAs0sZ", "t": "assets/img/shows/heights.jpg"}, {"n": "One Piece (Live Action)", "u": "https://drive.google.com/drive/folders/1SIvo_3pKpUesX4ZDY2Y7Z59kXe632XWe?usp=sharing", "t": "assets/img/shows/onepiece.png"}, {"n": "One Piece", "u": "https://drive.google.com/drive/folders/1VdoAVMV9ojCefzkVMsXB3ms5TCEcgxoC?usp=sharing", "t": "assets/img/shows/onepiece2.png"}, {"n": "PJ Masks", "u": "https://drive.google.com/drive/u/0/folders/1RUQMqskS3ybzT6w5WQGouH9EBd5pEcTh", "t": "assets/img/shows/pjmasks.png"}, {"n": "Hazbin Hotel", "u": "https://drive.google.com/drive/folders/1RfLGrTx9ryNevMomfrJh_3Rb6nHBiIqo?usp=sharing", "t": "assets/img/shows/trash.png"}, {"n": "Naruto", "u": "https://drive.google.com/drive/folders/1pdu3zkAPeF4o-tyPe-HsKhAiIZxBrqKS?usp=sharing", "t": "assets/img/shows/naruto.jpg"}, {"n": "Welcome to Derry", "u": "https://drive.google.com/drive/folders/1UABFLoCQG6DEdQkJwbbUPqYulGLsSiw2?usp=sharing", "t": "assets/img/shows/welcome.png"}, {"n": "Family Guy", "u": "https://drive.google.com/drive/folders/11W6C-Jqv9iQVasqjfiaYz77puax1UTjH?usp=sharing", "t": "assets/img/shows/family.png"}];
 const MANGA = [{"n": "Solo Leveling", "u": "https://drive.google.com/drive/folders/12tApujIKnQjaSlTRchrO0AZ8WhvhaNtl", "t": "assets/img/manga/solo.png"}, {"n": "Death Note", "u": "https://drive.google.com/drive/folders/1LNhG5Hjk4p9eJqvt0ooEpyAqnQRzJwYE", "t": "assets/img/manga/note.png"}, {"n": "Berserk", "u": "https://drive.google.com/drive/folders/14Ri_EP2Q6HxWJQbU97ZEAjSc9MfTmKI3", "t": "assets/img/manga/berserk.png"}, {"n": "Spy X Family", "u": "https://drive.google.com/drive/folders/1GZKLsvSvgvHfM3CXg4DrCh4d0tGb0NLX", "t": "assets/img/manga/spy.png"}, {"n": "Kingdom Hearts", "u": "https://drive.google.com/drive/folders/1IMqZo3XL_Go8PYa8i5iMH-3w5kEE-fTC", "t": "assets/img/manga/kingdom.png"}, {"n": "Dr. Stone", "u": "https://drive.google.com/drive/folders/1uiqdQByTMfGeeQV8ut3o0BYuZu52CR7i", "t": "assets/img/manga/drstone.png"}, {"n": "The Legend of Zelda", "u": "https://drive.google.com/drive/folders/1DiPmxSEnK8mffjlJv-Mrka-Pg_qw5Zlj", "t": "assets/img/manga/zelda.png"}, {"n": "Fullmetal Alchemist", "u": "https://drive.google.com/drive/u/0/folders/1OqoLf9E0z6e2MRD2g3UNKP3hE9puC4ts", "t": "assets/img/manga/fullmetal.png"}, {"n": "Inuyasha", "u": "https://drive.google.com/drive/folders/1n7qvsviHVecx08qMxI0bTRzpO3WmAEjG", "t": "assets/img/manga/yasha.png"}, {"n": "My Hero Academia (Chapters 377-384)", "u": "https://drive.google.com/drive/folders/1psqilwlG-rU_MRv5rn-ac-8UqNnQDor1", "t": "assets/img/manga/mha2.png"}, {"n": "Dandadan", "u": "https://drive.google.com/drive/u/0/folders/1u-a-NGgGUHD-h5RBtVkYnp8TwJosaJIe", "t": "assets/img/manga/dan.png"}, {"n": "Pokémon Adventures", "u": "https://drive.google.com/drive/folders/1QKSJxCrNtvP7Li3lLz0GhuTV7WrbXMiS", "t": "assets/img/manga/pokemon.png"}, {"n": "Blue Lock", "u": "https://drive.google.com/drive/folders/1hcGBwfdgJchkPlZMX55YF52aZRNdbXW9", "t": "assets/img/manga/bluelock.png"}, {"n": "Dragon Ball", "u": "https://drive.google.com/drive/folders/1TZ6z_ePBI2zt12Kqv0I2AYegGR6LjOrp", "t": "assets/img/manga/dbz.jpg"}, {"n": "Dragon Ball Super (Color)", "u": "https://drive.google.com/drive/folders/1iSzHqkCiW5S44-_97x_6x_pTTMJrPrMH", "t": "assets/img/manga/dbz2.jpg"}, {"n": "Dragon Ball Super", "u": "https://drive.google.com/drive/folders/1hyV1oaf6Cj-DiwYljSNt10xHOnAxjila", "t": "assets/img/manga/dbz3.jpg"}, {"n": "Jujutsu Kaisen", "u": "https://drive.google.com/drive/folders/1JYZKlpyw20ghU7LHLs6ECUISE9SDZ7_D", "t": "assets/img/manga/jjk.jpg"}, {"n": "Naruto", "u": "https://drive.google.com/drive/u/0/folders/1dHK5v5NZNiDvlQ9VK06AAPFNngnkkQCZ", "t": "assets/img/manga/naruto.jpg"}, {"n": "Sonic the Hedgehog", "u": "https://drive.google.com/drive/folders/1Rl63s8mf0P41xy-bVNamLoEz7xAkf-nL", "t": "assets/img/manga/sonic.jpg"}, {"n": "Sonic the Hedgehog IDW", "u": "https://drive.google.com/drive/folders/1ilEix-RfR10sBDAejkvzVubhCr_bSagf", "t": "assets/img/manga/sonic2.jpg"}, {"n": "Soul Eater", "u": "https://drive.google.com/drive/u/0/folders/1WN7L9-wnnM0-QDZFrsAyjq6ok-n2DsHL", "t": "assets/img/manga/soul.jpg"}];
 const MUSIC_TRACKS = [
@@ -1684,7 +1684,7 @@ $('music-local-file').onchange = (e) => {
    ABSENT v6 — toolbox · apps · mirrors · look · settings · boot
    ═══════════════════════════════════════════════════════════════ */
 
-/* ── toolbox (password locked) ── */
+/* -- toolbox (password locked) -- */
 const CALCS = [
     { n: 'Desmos', d: 'Graphing calculator', i: 'fa-solid fa-chart-line', u: 'https://www.desmos.com/calculator' },
     { n: 'GeoGebra', d: 'Graphing + geometry calculator', i: 'fa-solid fa-compass-drafting', u: 'https://www.geogebra.org/calculator' },
@@ -1792,7 +1792,7 @@ if (sessionStorage.getItem('absent_tools_ok') === '1') {
 }
 buildToolbox();
 
-/* ── apps ── */
+/* -- apps -- */
 const APPS = [
     { n: 'Spotify', icon: 'assets/img/apps/spotify.png', act: 'spotify' },
     { n: 'YouTube', icon: 'assets/img/apps/yt.png', u: 'https://youtube.com' },
@@ -1822,7 +1822,7 @@ $('spotify-launch').onclick = loadSpotifyPlayer;
 $('spotify-reload').onclick = () => { const f = $('spotify-frame'); if (f && f.dataset.loaded) { f.dataset.loaded = ''; loadSpotifyPlayer(); } };
 $('spotify-pop').onclick = () => showBrowser('https://open.spotify.com/');
 
-/* ── mirrors ── */
+/* -- mirrors -- */
 function renderMirrors() {
     const list = $('mirror-list');
     list.innerHTML = '';
@@ -1848,7 +1848,7 @@ function renderMirrors() {
    ABSENT v6 — look engine · views · settings · presence · boot
    ═══════════════════════════════════════════════════════════════ */
 
-/* ── views router ── */
+/* -- views router -- */
 function navTo(name) {
     // External (in-page-directory) views — open in a new tab so the SPA shell is preserved.
     if (name === 'storage') { window.open('/internal/storage/', '_blank'); return; }
@@ -1926,7 +1926,7 @@ $('uv-form').addEventListener('submit', (e) => {
     if (q) { $('uv-address').value = ''; showBrowser(q); }
 });
 
-/* ── look: accent / background / cursor / crosshair / perf ── */
+/* -- look: accent / background / cursor / crosshair / perf -- */
 const ACCENTS = [
     { n: 'sage', c: '#81bb92', m: '#b8ffcd' }, { n: 'mint', c: '#97ff89', m: '#d0ffc6' },
     { n: 'blue', c: '#60a5fa', m: '#bfdbfe' }, { n: 'purple', c: '#a78bfa', m: '#ddd6fe' },
@@ -2160,7 +2160,7 @@ $('perf-toggle').onclick = () => {
     applyPerf();
 };
 
-/* ── settings modal ── */
+/* -- settings modal -- */
 function openSettings(tab) {
     $('settings-modal').classList.add('on');
     if (tab) switchSetTab(tab);
@@ -2326,7 +2326,7 @@ $('absent-import-file').onchange = () => {
     r.readAsText(f);
 };
 
-/* ── eruda devtools ── */
+/* -- eruda devtools -- */
 let erudaLoaded = false;
 function toggleDevTools() {
     const tab = getActiveTab();
@@ -2346,7 +2346,7 @@ function toggleDevTools() {
 }
 $('devtools-btn').onclick = toggleDevTools;
 
-/* ── live presence ── */
+/* -- live presence -- */
 (function () {
     let ws = null, tries = 0, timer = null;
     function set(n) {
@@ -2366,7 +2366,7 @@ $('devtools-btn').onclick = toggleDevTools;
     window.addEventListener('beforeunload', () => { clearTimeout(timer); try { if (ws) ws.close(); } catch (_) {} });
 })();
 
-/* ── phrase rotator ── */
+/* -- phrase rotator -- */
 const PHRASES = ['w isaac', 'isaac the goat', 'brooklyn be good', 'absent 4 life', 'no se curly', 'gone · unseen · unblocked'];
 let _pi = 0;
 setInterval(() => {
@@ -2376,7 +2376,7 @@ setInterval(() => {
     setTimeout(() => { _pi = (_pi + 1) % PHRASES.length; el.textContent = PHRASES[_pi]; el.classList.remove('swap'); }, 380);
 }, 2600);
 
-/* ── boot sequence ── */
+/* -- boot sequence -- */
 const BOOT_STEPS = ['fetching servers', 'picking the fastest', 'starting scramjet', 'wiring transport', 'registering sw'];
 async function proxyInit() {
     const sub = $('boot-sub');
@@ -2420,14 +2420,14 @@ async function proxyInit() {
     setTimeout(() => $('boot').remove(), 500);
 }
 
-/* ── hash router (#games, #media…) ── */
+/* -- hash router (#games, #media…) -- */
 function checkHash() {
     const h = location.hash.replace('#', '');
     if (['home', 'games', 'apps', 'media', 'tools', 'history', 'bookmarks', 'mirrors'].includes(h)) navTo(h);
 }
 window.addEventListener('hashchange', checkHash);
 
-/* ── restore prefs + go ── */
+/* -- restore prefs + go -- */
 applyAccent(localStorage.getItem('absent_accent') || 'sage');
 applyBg(localStorage.getItem('absent_bg') || 'particles');
 applyCursor(localStorage.getItem('absent_cursor') || 'default');
